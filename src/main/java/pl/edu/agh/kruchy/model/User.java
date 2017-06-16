@@ -1,4 +1,4 @@
-package pl.edu.agh.krzysiek.model;
+package pl.edu.agh.kruchy.model;
 
 import java.io.Serializable;
 

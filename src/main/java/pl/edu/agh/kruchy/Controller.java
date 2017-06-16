@@ -1,11 +1,11 @@
-package pl.edu.agh.krzysiek;
+package pl.edu.agh.kruchy;
 
-import pl.edu.agh.krzysiek.model.Password;
-import pl.edu.agh.krzysiek.model.User;
-import pl.edu.agh.krzysiek.model.Username;
-import pl.edu.agh.krzysiek.service.PasswordValidator;
-import pl.edu.agh.krzysiek.service.UserService;
-import pl.edu.agh.krzysiek.service.UsernameValidator;
+import pl.edu.agh.kruchy.model.Password;
+import pl.edu.agh.kruchy.model.User;
+import pl.edu.agh.kruchy.model.Username;
+import pl.edu.agh.kruchy.service.PasswordValidator;
+import pl.edu.agh.kruchy.service.UserService;
+import pl.edu.agh.kruchy.service.UsernameValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

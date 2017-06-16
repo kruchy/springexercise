@@ -1,4 +1,4 @@
-package pl.edu.agh.krzysiek.service;
+package pl.edu.agh.kruchy.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

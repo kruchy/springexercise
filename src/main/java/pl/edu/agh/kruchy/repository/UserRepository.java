@@ -1,6 +1,6 @@
-package pl.edu.agh.krzysiek.repository;
+package pl.edu.agh.kruchy.repository;
 
-import pl.edu.agh.krzysiek.model.User;
+import pl.edu.agh.kruchy.model.User;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 

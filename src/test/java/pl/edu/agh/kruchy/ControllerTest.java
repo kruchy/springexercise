@@ -1,9 +1,9 @@
-package pl.edu.agh.krzysiek;
+package pl.edu.agh.kruchy;
 
-import pl.edu.agh.krzysiek.model.User;
-import pl.edu.agh.krzysiek.service.PasswordValidator;
-import pl.edu.agh.krzysiek.service.UserService;
-import pl.edu.agh.krzysiek.service.UsernameValidator;
+import pl.edu.agh.kruchy.model.User;
+import pl.edu.agh.kruchy.service.PasswordValidator;
+import pl.edu.agh.kruchy.service.UserService;
+import pl.edu.agh.kruchy.service.UsernameValidator;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

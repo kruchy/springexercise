@@ -1,4 +1,4 @@
-package pl.edu.agh.krzysiek.configuration;
+package pl.edu.agh.kruchy.configuration;
 
 import com.mongodb.Mongo;
 import com.mongodb.MongoClient;

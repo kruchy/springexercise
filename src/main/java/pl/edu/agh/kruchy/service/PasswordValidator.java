@@ -1,4 +1,4 @@
-package pl.edu.agh.krzysiek.service;
+package pl.edu.agh.kruchy.service;
 
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;

@@ -1,7 +1,7 @@
-package pl.edu.agh.krzysiek.service;
+package pl.edu.agh.kruchy.service;
 
-import pl.edu.agh.krzysiek.model.User;
-import pl.edu.agh.krzysiek.repository.UserRepository;
+import pl.edu.agh.kruchy.model.User;
+import pl.edu.agh.kruchy.repository.UserRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

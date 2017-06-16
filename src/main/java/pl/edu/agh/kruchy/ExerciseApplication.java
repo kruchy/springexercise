@@ -1,4 +1,4 @@
-package pl.edu.agh.krzysiek;
+package pl.edu.agh.kruchy;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
