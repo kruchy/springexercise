@@ -3,8 +3,8 @@ package pl.edu.agh.kruchy.service;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
+import pl.edu.agh.kruchy.model.Password;
 
-//@Service("passwordValidator")
 @Component
 public class PasswordValidator implements Validator {
 
@@ -12,15 +12,14 @@ public class PasswordValidator implements Validator {
 
     @Override
     public boolean supports(Class<?> aClass) {
-        return String.class.equals(aClass);
+        return Password.class.equals(aClass);
     }
 
     @Override
     public void validate(Object o, Errors errors) {
-        String password = (String) o;
+        Password password = (Password) o;
 
-
-        if (!password.matches(PASSWORD_REGEX)) {
+        if (!password.getPassword().matches(PASSWORD_REGEX)) {
             errors.rejectValue("password", "password.invalid");
         }
 

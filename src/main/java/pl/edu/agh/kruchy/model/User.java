@@ -1,18 +1,18 @@
 package pl.edu.agh.kruchy.model;
 
-import java.io.Serializable;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NonNull;
+
+import java.io.Serializable;
 
 @Data
 @AllArgsConstructor
 public class User implements Serializable {
 
     @NonNull
-    String username;
+    Username username;
 
     @NonNull
-    String password;
+    Password password;
 }

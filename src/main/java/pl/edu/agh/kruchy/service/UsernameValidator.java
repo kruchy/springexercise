@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
+import pl.edu.agh.kruchy.model.Username;
 
 import java.util.regex.Pattern;
 
@@ -14,21 +15,21 @@ public class UsernameValidator implements Validator {
 
     @Autowired
     private UserService userService;
-    Pattern pattern = Pattern.compile(USERNAME_REGEX);
+    private Pattern pattern = Pattern.compile(USERNAME_REGEX);
 
 
     @Override
     public boolean supports(Class<?> aClass) {
-        return String.class.equals(aClass);
+        return Username.class.equals(aClass);
     }
 
     @Override
     public void validate(Object o, Errors errors) {
-        String username = (String) o;
-        userService.findUser(username).ifPresent(user ->
+        Username username = (Username) o;
+        userService.findUser(username.getUsername()).ifPresent(user ->
                 errors.rejectValue("username", "username.exists"));
 
-        if (!pattern.matcher(username).find()) {
+        if (!pattern.matcher(username.getUsername()).find()) {
             errors.rejectValue("username", "username.invalid");
         }
     }
