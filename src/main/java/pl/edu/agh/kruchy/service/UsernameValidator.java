@@ -13,9 +13,13 @@ public class UsernameValidator implements Validator {
 
     private static final String USERNAME_REGEX = "^[a-zA-Z0-9]{5,}$";
 
-    @Autowired
-    private UserService userService;
+    private final UserService userService;
     private Pattern pattern = Pattern.compile(USERNAME_REGEX);
+
+    @Autowired
+    public UsernameValidator(UserService userService) {
+        this.userService = userService;
+    }
 
 
     @Override

@@ -9,11 +9,15 @@ import pl.edu.agh.kruchy.model.User;
 @Component
 public class UserValidator implements Validator {
 
-    @Autowired
-    private PasswordValidator passwordValidator;
+    private final PasswordValidator passwordValidator;
+
+    private final UsernameValidator usernameValidator;
 
     @Autowired
-    private UsernameValidator usernameValidator;
+    public UserValidator(PasswordValidator passwordValidator, UsernameValidator usernameValidator) {
+        this.passwordValidator = passwordValidator;
+        this.usernameValidator = usernameValidator;
+    }
 
 
     @Override

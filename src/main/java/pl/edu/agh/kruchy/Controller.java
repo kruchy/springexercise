@@ -22,8 +22,7 @@ import pl.edu.agh.kruchy.service.UsernameValidator;
 @RestController
 public class Controller {
 
-    private final
-    UserService userService;
+    private final UserService userService;
 
     private final UsernameValidator usernameValidator;
 
